@@ -1,0 +1,47 @@
+.searchBox input{
+
+    outline: none;
+    border: none;
+
+}
+
+.btn{
+
+    background-color: red;
+    border: none;
+    
+}
+
+.searchMovies{
+    
+    width: 100%;
+    height: 100%;
+    // background-color: blueviolet;
+    padding: 20px;
+    // margin-bottom: 40px;
+
+}
+
+.movie{
+
+    width: 270px;
+    height: 340px;
+    background-color: aqua;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.movie img{
+
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+
+}
+
+.movie img:hover{
+
+    transform: scale(1.04);
+
+}

@@ -1,0 +1,24 @@
+.navbar-brand{
+
+    font-size: 28px;
+    font-weight: 500;
+    color: red;
+
+}
+
+.navbar-nav{
+
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item a i{
+    
+    margin-right:10px;
+    
+}
+
+.nav-item a,.nav-item i{
+    
+    color: red;
+}

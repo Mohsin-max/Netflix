@@ -1,0 +1,252 @@
+<div class="contain pb-5">
+
+  <!-- BANNER -->
+  <div class="row">
+
+    <div class="column">
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item" *ngFor="let bannerItem of arrBannerData;index as i" [ngClass]="{'active': i == 0}">
+            <img src="https://image.tmdb.org/t/p/original/{{bannerItem.backdrop_path}}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>{{bannerItem.original_title}}</h3>
+              <p>{{bannerItem.overview}}</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- BANNER -->
+
+  <!-- TRENDING -->
+  <div class="row">
+
+    <div class="column pt-5 pb-3">
+
+      <h2 class="text-white ms-4">TRENDING</h2>
+
+    </div>
+
+    <div class="column">
+
+      <div class="rowPosters px-4">
+
+        <div class="posters" *ngFor="let trendingItem of arrTrendingData">
+
+          <img src="https://image.tmdb.org/t/p/original/{{trendingItem.poster_path}}" alt=""
+            [routerLink]="['movie/',trendingItem.id]">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- TRENDING -->
+
+  <!-- ACTION -->
+  <div class="row">
+
+    <div class="column pt-5 pb-3">
+
+      <h2 class="text-white ms-4">ACTION</h2>
+
+    </div>
+
+    <div class="column">
+
+      <div class="rowPosters px-4">
+
+        <div class="posters" *ngFor="let actionItem of arrActionData">
+
+          <img src="https://image.tmdb.org/t/p/original/{{actionItem.poster_path}}" alt=""
+            [routerLink]="['movie/',actionItem.id]">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- ACTION -->
+
+  <!-- ADVENTURE -->
+  <div class="row">
+
+    <div class="column pt-5 pb-3">
+
+      <h2 class="text-white ms-4">ADVENTURE</h2>
+
+    </div>
+
+    <div class="column">
+
+      <div class="rowPosters px-4">
+
+        <div class="posters" *ngFor="let adventureItem of arrAdventureData">
+
+          <img src="https://image.tmdb.org/t/p/original/{{adventureItem.poster_path}}" alt=""
+            [routerLink]="['movie/',adventureItem.id]">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- ADVENTURE -->
+
+  <!-- ANIMATION -->
+  <div class="row">
+
+    <div class="column pt-5 pb-3">
+
+      <h2 class="text-white ms-4">ANIMATION</h2>
+
+    </div>
+
+    <div class="column">
+
+      <div class="rowPosters px-4">
+
+        <div class="posters" *ngFor="let animationItem of arrAnimationData">
+
+          <img src="https://image.tmdb.org/t/p/original/{{animationItem.poster_path}}" alt=""
+            [routerLink]="['movie/',animationItem.id]">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- ANIMATION -->
+
+  <!-- COMEDY -->
+  <div class="row">
+
+    <div class="column pt-5 pb-3">
+
+      <h2 class="text-white ms-4">COMEDY</h2>
+
+    </div>
+
+    <div class="column">
+
+      <div class="rowPosters px-4">
+
+        <div class="posters" *ngFor="let comedyItem of arrComedyData">
+
+          <img src="https://image.tmdb.org/t/p/original/{{comedyItem.poster_path}}" alt=""
+            [routerLink]="['movie/',comedyItem.id]">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- COMEDY -->
+
+  <!-- DOCUMENTARY -->
+  <div class="row">
+
+    <div class="column pt-5 pb-3">
+
+      <h2 class="text-white ms-4">DOCUMENTARY</h2>
+
+    </div>
+
+    <div class="column">
+
+      <div class="rowPosters px-4">
+
+        <div class="posters" *ngFor="let documentaryItem of arrDocumentaryData">
+
+          <img src="https://image.tmdb.org/t/p/original/{{documentaryItem.poster_path}}" alt=""
+            [routerLink]="['movie/',documentaryItem.id]">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- DOCUMENTARY -->
+
+  <!-- SCI-FI -->
+  <div class="row">
+
+    <div class="column pt-5 pb-3">
+
+      <h2 class="text-white ms-4">SCI-FI</h2>
+
+    </div>
+
+    <div class="column">
+
+      <div class="rowPosters px-4">
+
+        <div class="posters" *ngFor="let sciFiItem of arrsciFiData">
+
+          <img src="https://image.tmdb.org/t/p/original/{{sciFiItem.poster_path}}" alt=""
+            [routerLink]="['movie/',sciFiItem.id]">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- SCI-FI -->
+
+  <!-- THRILLER -->
+  <div class="row">
+
+    <div class="column pt-5 pb-3">
+
+      <h2 class="text-white ms-4">THRILLER</h2>
+
+    </div>
+
+    <div class="column">
+
+      <div class="rowPosters px-4">
+
+        <div class="posters" *ngFor="let thrillerItem of arrThrillerData">
+
+          <img src="https://image.tmdb.org/t/p/original/{{thrillerItem.poster_path}}" alt=""
+            [routerLink]="['movie/',thrillerItem.id]">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- THRILLER -->
+
+</div>

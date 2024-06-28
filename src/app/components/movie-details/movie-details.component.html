@@ -1,0 +1,52 @@
+<div class="container-fluid mt-5 pt-5">
+
+    <div class="row" *ngFor="let movieDetailItem of arrMovieDetailData">
+
+        <div class="col-lg-4 col-md-12 ps-5">
+
+            <div class="movieDetailPoster ms-5">
+                <img class="img-fluid" src="https://image.tmdb.org/t/p/original/{{movieDetailItem.poster_path}}" alt="">
+            </div>
+
+        </div>
+        <div class="col-lg-8 col-md-12 pe-4">
+
+            <h1 class="mb-4" style="color: red;">{{movieDetailItem.original_title}}</h1>
+
+            <p class="text-white mb-5">{{movieDetailItem.overview}}</p>
+
+            <a href="https://www.themoviedb.org/video/play?key={{arrMovieVideoData}}" target="_blank"><button class="btn">Watch Trailer</button></a>
+        </div>
+
+    </div>
+
+
+    <div class="row mt-5 pt-5 ps-3">
+
+        <h1 class="text-white">Top Cast</h1>
+
+    </div>
+
+
+    <div class="row mt-5">
+
+        <div class="col-lg-3 col-md-3 col-6 d-flex align-items-center gap-3 px-5 mb-5"
+            *ngFor="let movieCastItem of arrMovieCastData">
+
+            <div class="castImage">
+                <img src="https://image.tmdb.org/t/p/original/{{movieCastItem.profile_path}}"
+                    alt="{{movieCastItem.original_name}}">
+            </div>
+
+            <div class="castName">
+                <h5 class="text-white">{{movieCastItem.character}}</h5>
+                <p class="text-white">{{movieCastItem.original_name}}</p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
